@@ -173,3 +173,6 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_prefer_sync_wakee_to_waker 1
     write /proc/sys/kernel/sched_init_task_load 40
     write /proc/sys/kernel/sched_freq_inc_notify 3000000
+
+    # Is IOP even still a thing?
+    start vendor.iop
