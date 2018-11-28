@@ -79,6 +79,7 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/enable_prediction 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boost 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boost 1
 
     # online big cluster
     write /sys/devices/system/cpu/cpu4/online 1
@@ -95,6 +96,7 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/use_sched_load 1
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/ignore_hispeed_on_notif 0
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/enable_prediction 0
+    write /sys/devices/system/cpu/cpu4/cpufreq/interactive/boost 1
 
     # Ensure minimum frequencies set to 300MHz
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 300000
